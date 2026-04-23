@@ -1,0 +1,24 @@
+project_name: sentiment-classification
+artifacts_dir: ./artifacts
+
+data:
+  source: jsonl
+  train_path: ./data/train.jsonl
+  val_path: ./data/validation.jsonl
+  test_path: ./data/test.jsonl
+
+model:
+  base_model: gpt-4o-mini-2024-07-18
+  suffix: sentiment
+  seed: 7
+
+hyperparameters:
+  n_epochs: 2
+
+trainer:
+  poll_interval_seconds: 30
+  wait_for_completion: true
+
+inference:
+  max_tokens: 4
+  temperature: 0.0

@@ -1,0 +1,46 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# venvs
+.venv/
+venv/
+env/
+
+# uv
+.uv-cache/
+
+# env files
+.env
+.env.*
+!.env.example
+
+# testing / linting
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Generated artifacts
+jsonl/
+artifacts/
+outputs/
+runs/
+*.jsonl
+!tests/**/*.jsonl
+!examples/**/*.jsonl
